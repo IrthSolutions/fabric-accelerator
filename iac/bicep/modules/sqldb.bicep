@@ -117,6 +117,8 @@ module storage_permissions 'storage-permissions.bicep' = if(enable_audit)  {
 }
 
 // Deploy audit diagnostics Azure SQL Server to storage account
+ 
+
 resource sqlserver_audit 'Microsoft.Sql/servers/auditingSettings@2023-08-01-preview' = if(enable_audit)  {
   name: 'default'
   parent: sqlserver
@@ -129,7 +131,8 @@ resource sqlserver_audit 'Microsoft.Sql/servers/auditingSettings@2023-08-01-prev
     retentionDays: 90
     state: 'Enabled'
     storageAccountSubscriptionId: subscription().subscriptionId
-    storageEndpoint: audit_storage_account.properties.primaryEndpoints.blob
+    storageEndpoint: enable_audit ? audit_storage_account.properties.primaryEndpoints.blob : ''
+
  }
 }
 //Role Assignment
