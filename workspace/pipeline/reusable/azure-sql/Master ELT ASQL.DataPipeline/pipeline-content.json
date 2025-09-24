@@ -33,11 +33,11 @@
           "datasetSettings": {
             "type": "AzureSqlTable",
             "typeProperties": {
-              "database": "controlDB-78d6902e-70ea-4fb0-b51e-af3f2aaee3b7"
+              "database": "controlDB (fabaccel/controlDB)"
             },
             "schema": [],
             "externalReferences": {
-              "connection": "78e8d795-a55c-412e-9b76-47ba404b4d51"
+              "connection": "78bc750f-3f3c-4a7d-a96f-ec45181ed6a2"
             },
             "annotations": []
           },
@@ -323,27 +323,27 @@
       },
       "BronzeObjectID": {
         "type": "string",
-        "defaultValue": "c6c5024f-de55-45ca-a79a-decbe16235e3"
+        "defaultValue": "6e5d7857-9f8b-467f-bc0b-a8e50435b640"
       },
       "BronzeWorkspaceID": {
         "type": "string",
-        "defaultValue": "8d8d00a7-0e8a-4e3b-8c0e-8dcafac7adec"
+        "defaultValue": "ec8c533b-0c7b-4cbf-b081-b02bcd4894da"
       },
       "SilverObjectID": {
         "type": "string",
-        "defaultValue": "c6c5024f-de55-45ca-a79a-decbe16235e3"
+        "defaultValue": "6e5d7857-9f8b-467f-bc0b-a8e50435b640"
       },
       "SilverWorkspaceID": {
         "type": "string",
-        "defaultValue": "8d8d00a7-0e8a-4e3b-8c0e-8dcafac7adec"
+        "defaultValue": "ec8c533b-0c7b-4cbf-b081-b02bcd4894da"
       },
       "GoldObjectID": {
         "type": "string",
-        "defaultValue": "7e2bbf6b-43fb-498c-90e3-56199c8c3b5e"
+        "defaultValue": "c435e485-ec40-4444-a6d4-48bf2561215a"
       },
       "GoldWorkspaceID": {
         "type": "string",
-        "defaultValue": "8d8d00a7-0e8a-4e3b-8c0e-8dcafac7adec"
+        "defaultValue": "ec8c533b-0c7b-4cbf-b081-b02bcd4894da"
       },
       "GoldDWEndpoint": {
         "type": "string",
